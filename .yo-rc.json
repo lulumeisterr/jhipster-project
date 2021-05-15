@@ -41,6 +41,8 @@
     "packageFolder": "br/com/fiap",
     "jwtSecretKey": "ODZmOGUwZmU1OThjNjQzYzYzMjNkNDVkY2RhNmQzZTdiZGNkNWU2ODdlNWU2MGE2OTk0ODMzYWRiMTBhYzY5MmMyOTBjNTBhMGVhNDdmNmE4ZGZhY2Y4NWJmYmIwYjA5NGM0NTVmNmRhNzMyOTVhMDQ4NTBhYWRiY2ZjYTgxOWE=",
     "clientPackageManager": "npm",
-    "languages": ["pt-br"]
+    "languages": ["pt-br"],
+    "entities": ["Sensor", "SubscriptionSensor"],
+    "lastLiquibaseTimestamp": 1621121349000
   }
 }
