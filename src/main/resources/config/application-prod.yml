@@ -34,14 +34,14 @@ spring:
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: prod
-    url: jdbc:mysql://database-1.ciwbioissrvb.us-east-1.rds.amazonaws.com:3306/jayjayApplication?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    url: jdbc:mysql://database-1.ciwbioissrvb.us-east-1.rds.amazonaws.com:3306/jhipsterApp?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
   mail:
     host: localhost
     port: 25
     username: admin
     password: 270298admin
   r2dbc:
-    url: r2dbc:mysql://database-1.ciwbioissrvb.us-east-1.rds.amazonaws.com:3306/jayjayApplication?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    url: r2dbc:mysql://database-1.ciwbioissrvb.us-east-1.rds.amazonaws.com:3306/jhipsterApp?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
     username: admin
     password: 270298admin
   thymeleaf:
