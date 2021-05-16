@@ -1,8 +1,8 @@
 
   > <p> Recursos em nuvem <br>
-    - AWS RDS <br>
-    - AWS GATEWAY API <br>
-    - AWS EC2 <br>
+    - AWS RDS 
+    - AWS GATEWAY API
+    - AWS EC2
   Backend
     - WebFlux
     - JWT e oauth2
