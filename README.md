@@ -1,6 +1,5 @@
 # Sobre
     Link da aplicação : http://jhipsterfiap.ddns.net:8080
-    Okta : https://dev-16910599.okta.com
 # J-Hipster project
 
   > <p> Recursos em nuvem <br>
