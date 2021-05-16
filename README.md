@@ -48,6 +48,7 @@
         docker-compose -f /src/main/docker/keyclock.yml up -d
          
  > 3 - Inicialize a aplicação <br>
+     
        ./mvn -Dspring.profiles.active={nome do propertie}
  
  # O'que foi configurado na ec2 ?
