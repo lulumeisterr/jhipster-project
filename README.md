@@ -3,7 +3,7 @@
 # J-Hipster project
 
   > <p> Recursos em nuvem <br>
-    - AWS RDS 
+    - AWS RDS Mysql
     - AWS GATEWAY API
     - AWS EC2
    </p>
