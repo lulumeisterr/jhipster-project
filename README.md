@@ -2,16 +2,17 @@
   > <p> Recursos em nuvem <br>
     - AWS RDS 
     - AWS GATEWAY API
-    - AWS EC2
-  Backend
+    - AWS EC2</p>
+    
+  <p> Backend <br>
     - WebFlux
-    - JWT e oauth2
-  Front-end
-    - ReactJs
+    - JWT e oauth2</p>]
+  
+  <p>Front-end<br>
+    - ReactJs</p>
+    
   Testes
     - Cypress
-
-</p>
 
   
 # Exemplo de utilização da API
