@@ -43,8 +43,12 @@
  # Como inicializar o projeto ?
  
  > 1 - Clonar o repositorio <br>
- > 2 - Configure o seu banco de dados nas configurações de propriedades da aplicação <br>
- > 3 - Inicialize o maven <br>
+ > 2 - Configure o seu banco de dados utilizando as propriedades da aplicação <br>
+ > 3 - Inicialize o KeyClock (Defina o profile de dev na hora de inicializar o maven caso for rodar local)
+         
+        -- Comando
+         
+ > 3 - Inicialize a aplicação <br>
  
        Se quiser rodar com perfil diferenciado de properties
        ./mvn -Dspring.profiles.active={nome do propertie}
