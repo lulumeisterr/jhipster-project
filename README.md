@@ -1,3 +1,4 @@
+#J-Hipster project
 
   > <p> Recursos em nuvem <br>
     - AWS RDS 
@@ -9,12 +10,11 @@
     - JWT e oauth2
    </p>
   
- > <p>Front-end <br>
+ > <p>Front-end/tests<br>
     - ReactJs
+    - Cypress
    </p>
     
-  Testes
-    - Cypress
 
   
 # Exemplo de utilização da API
