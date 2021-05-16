@@ -40,6 +40,14 @@
      - Metodo [GET]
          
  
+ # Como inicializar o projeto ?
+ 
+ > Clonar o repositorio
+ > Configure o seu banco de dados nas configurações de propriedades da aplicação
+ > Inicialize o maven
+    > Se quiser rodar com perfil diferenciado de properties
+        > ./mvn -Dspring.profiles.active={nome do propertie}
+ 
  # Oque foi configurado na ec2 ?
  
 - Configurações de variaveis de ambiente do java
