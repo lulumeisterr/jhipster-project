@@ -1,6 +1,7 @@
 # Sobre
     Link da aplicação : http://jhipsterfiap.ddns.net:8080
     Okta : https://dev-16910599-admin.okta.com/admin/dashboard
+    NoIp : https://my.noip.com
 # J-Hipster project
 
   > <p> Recursos em nuvem <br>
