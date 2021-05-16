@@ -43,10 +43,10 @@
  # Como inicializar o projeto ?
  
  > Clonar o repositorio <br>
- > Configure o seu banco de dados nas configurações de propriedades da aplicação
- > Inicialize o maven
-    > Se quiser rodar com perfil diferenciado de properties
-        > ./mvn -Dspring.profiles.active={nome do propertie}
+ > Configure o seu banco de dados nas configurações de propriedades da aplicação <br>
+ > Inicialize o maven <br>
+    > Se quiser rodar com perfil diferenciado de properties <br> 
+        > ./mvn -Dspring.profiles.active={nome do propertie} <br>
  
  # Oque foi configurado na ec2 ?
  
