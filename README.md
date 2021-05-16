@@ -63,17 +63,17 @@
     
 - Instalação do nodejs (Caso use linux)<br>
          sudo apt install curl
-         curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-         source ~/.nvm/nvm.sh
-         nvm install 12.18.3
+         curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash <br>
+         source ~/.nvm/nvm.sh <br>
+         nvm install 12.18.3 <br>
          sudo apt install npm 
     
 - Instalação do JHipster <br>  
     npm install -g generator-jhipster
    
 - Instalação do Docker(Caso use linux) <br>  
-     curl -fsSL https://get.docker.com -o get-docker.sh
-     sudo sh get-docker.sh
-     sudo apt-get install docker-compose -y
-     docker-compose -f src/main/docker/keycloak.yml up
+     curl -fsSL https://get.docker.com -o get-docker.sh <br>
+     sudo sh get-docker.sh <br>
+     sudo apt-get install docker-compose -y <br> 
+     docker-compose -f src/main/docker/keycloak.yml up <br>
  
