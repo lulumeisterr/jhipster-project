@@ -2,7 +2,7 @@
 
 # Tecnologias:
 
-  Recursos em nuvem
+  <p>Recursos em nuvem
     - AWS RDS
     - AWS GATEWAY API
     - AWS EC2
@@ -13,6 +13,7 @@
     - ReactJs
   Testes
     - Cypress
+  </p>
   
 # Exemplo de utilização da API
     
