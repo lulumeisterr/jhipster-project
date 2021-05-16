@@ -69,7 +69,10 @@
          sudo apt install npm 
     
 - Instalação do JHipster <br>  
+
     npm install -g generator-jhipster
+    jhpister (Configuração do framework)
+    jhpister --with-entities (Importando entidades)
    
 - Instalação do Docker(Caso use linux) <br>  
      curl -fsSL https://get.docker.com -o get-docker.sh <br>
