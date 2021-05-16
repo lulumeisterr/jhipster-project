@@ -4,12 +4,14 @@
     - AWS GATEWAY API
     - AWS EC2</p>
     
-  <p> Backend <br>
+ > <p> Backend <br>
     - WebFlux
-    - JWT e oauth2</p>]
+    - JWT e oauth2
+   </p>
   
-  <p>Front-end<br>
-    - ReactJs</p>
+ > <p>Front-end <br>
+    - ReactJs
+   </p>
     
   Testes
     - Cypress
