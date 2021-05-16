@@ -1,5 +1,19 @@
 # J-Hipster
 
+# Tecnologias:
+
+  Recursos em nuvem
+    - AWS RDS
+    - AWS GATEWAY API
+    - AWS EC2
+  Backend
+    - WebFlux
+    - JWT e oauth2
+  Front-end
+    - ReactJs
+  Testes
+    - Cypress
+  
 # Exemplo de utilização da API
     
     # Autentificação
