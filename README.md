@@ -5,7 +5,8 @@
   > <p> Recursos em nuvem <br>
     - AWS RDS 
     - AWS GATEWAY API
-    - AWS EC2</p>
+    - AWS EC2
+   </p>
     
  > <p> Backend <br>
     - WebFlux
