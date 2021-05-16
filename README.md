@@ -20,11 +20,11 @@
     
 
   
-# Exemplo de utilização da API
-    
+# Exemplo de utilização da API - GATEWAY URLS:
+
     # Autentificação
 
-    - Endpoint http://jhipsterfiap.ddns.net:8080/api/authenticate
+    - Endpoints http://jhipsterfiap.ddns.net:8080/api/authenticate
     - Utilizar o metodo [POST]
     - Body
     
@@ -39,14 +39,13 @@
      - Endpoint http://jhipsterfiap.ddns.net:8080/api/sensors
      - Metodo [GET]
          
- 
  # Como inicializar o projeto ?
  
  > 1 - Clonar o repositorio <br>
  > 2 - Configure o seu banco de dados utilizando as propriedades da aplicação <br>
  > 3 - Inicialize o KeyClock (Defina o profile de dev na hora de inicializar o maven caso for rodar local)
          
-        -- Comando
+        docker-compose -f /src/main/docker/keyclock.yml up -d
          
  > 3 - Inicialize a aplicação <br>
  
