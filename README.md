@@ -46,8 +46,8 @@
  > 2 - Configure o seu banco de dados nas configurações de propriedades da aplicação <br>
  > 3 - Inicialize o maven <br>
  
-       Se quiser rodar com perfil diferenciado de properties <br> 
-       ./mvn -Dspring.profiles.active={nome do propertie} <br>
+       Se quiser rodar com perfil diferenciado de properties
+       ./mvn -Dspring.profiles.active={nome do propertie}
  
  # Oque foi configurado na ec2 ?
  
