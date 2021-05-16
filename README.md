@@ -26,20 +26,22 @@
 
     # Autentificação
 
-    - Endpoints http://jhipsterfiap.ddns.net:8080/api/authenticate
+    - Endpoints https://v0mw8khzu3.execute-api.us-east-1.amazonaws.com/prod/api/authenticate
     - Utilizar o metodo [POST]
     - Body
     
         {
-            "username":"user",
-            "password":"user"
+            "username":"admin",
+            "password":"admin"
         }
         
         
      # Requisição Get para obter os sensores
      
-     - Endpoint http://jhipsterfiap.ddns.net:8080/api/sensors
+     - Endpoint https://v0mw8khzu3.execute-api.us-east-1.amazonaws.com/prod/api/sensors
      - Metodo [GET]
+     - Headers
+        Authorization: Bearer ---TOKENX-----
          
  # Como inicializar o projeto ?
  
