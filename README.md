@@ -42,7 +42,7 @@
  
  # Como inicializar o projeto ?
  
- > Clonar o repositorio
+ > Clonar o repositorio <br>
  > Configure o seu banco de dados nas configurações de propriedades da aplicação
  > Inicialize o maven
     > Se quiser rodar com perfil diferenciado de properties
