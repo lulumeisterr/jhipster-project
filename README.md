@@ -1,6 +1,4 @@
-# J-Hipster
 
-# Tecnologias:
   Recursos em nuvem
     - AWS RDS
     - AWS GATEWAY API
