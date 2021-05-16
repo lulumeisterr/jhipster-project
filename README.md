@@ -68,8 +68,8 @@
     
 - Instalação do JHipster <br>  
 
-    npm install -g generator-jhipster
-    jhpister (Configuração do framework)
+    npm install -g generator-jhipster <br>
+    jhpister (Configuração do framework) <br>
     jhpister --with-entities (Importando entidades)
    
 - Instalação do Docker(Caso use linux) <br>  
