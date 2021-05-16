@@ -12,7 +12,7 @@
     
  > <p> Backend <br>
     - Spring WebFlux
-    - Spring Security (JWT e oauth2)
+    - Spring Security (JWT)
    </p>
   
  > <p>Front-end/tests<br>
