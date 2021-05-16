@@ -58,8 +58,8 @@
  # O'que foi configurado na ec2 ?
  
 - Configurações de variaveis de ambiente do java <br>  
-         sudo apt install openjdk-11-jre-headless -y
-         export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64  
+         sudo apt install openjdk-11-jre-headless -y <br>
+         export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64  <br>
     
 - Instalação do nodejs (Caso use linux)<br>
          sudo apt install curl
