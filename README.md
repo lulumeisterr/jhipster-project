@@ -25,8 +25,9 @@
 # Exemplo de utilização da API - GATEWAY URLS:
 
     # Autentificação
-
-    > Endpoints https://v0mw8khzu3.execute-api.us-east-1.amazonaws.com/prod/api/authenticate
+    
+   > Endpoints https://v0mw8khzu3.execute-api.us-east-1.amazonaws.com/prod/api/authenticate
+   
     - Utilizar o metodo [POST]
     - Body
     
