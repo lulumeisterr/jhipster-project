@@ -9,8 +9,8 @@
    </p>
     
  > <p> Backend <br>
-    - WebFlux
-    - JWT e oauth2
+    - Spring WebFlux
+    - Spring Security (JWT e oauth2)
    </p>
   
  > <p>Front-end/tests<br>
