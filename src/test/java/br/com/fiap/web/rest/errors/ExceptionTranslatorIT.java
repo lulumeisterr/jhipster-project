@@ -1,6 +1,9 @@
 package br.com.fiap.web.rest.errors;
 
+import static org.springframework.security.test.web.reactive.server.SecurityMockServerConfigurers.csrf;
+
 import br.com.fiap.IntegrationTest;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
@@ -20,6 +23,11 @@ class ExceptionTranslatorIT {
 
     @Autowired
     private WebTestClient webTestClient;
+
+    @BeforeEach
+    public void setupCsrf() {
+        webTestClient = webTestClient.mutateWith(csrf());
+    }
 
     @Test
     void testConcurrencyFailure() {
