@@ -23,9 +23,12 @@
     - Cypress
    </p>
     
-
   
-# Exemplo de utilização da API - GATEWAY URLS:
+# Exemplo de utilização da API KeyClock(oauth2) - GATEWAY URLS:
+  
+  
+  
+# Exemplo de utilização da API JWT - GATEWAY URLS:
 
     # Autentificação
     
@@ -84,6 +87,12 @@
      docker-compose -f src/main/docker/keycloak.yml up <br>
  
  
- - Link para demonstração
+ - Link para demonstração usando JWT
  
     https://www.loom.com/share/19ae6a31a2234d8891ac1452e212447d
+    
+    
+ - Link para demonstração usando KeyClock
+ 
+    https://www.loom.com/share/19ae6a31a2234d8891ac1452e212447d
+
