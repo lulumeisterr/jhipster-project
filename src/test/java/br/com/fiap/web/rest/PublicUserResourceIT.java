@@ -1,9 +1,11 @@
 package br.com.fiap.web.rest;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.security.test.web.reactive.server.SecurityMockServerConfigurers.csrf;
 
 import br.com.fiap.IntegrationTest;
 import br.com.fiap.config.Constants;
+import br.com.fiap.config.TestSecurityConfiguration;
 import br.com.fiap.domain.User;
 import br.com.fiap.repository.UserRepository;
 import br.com.fiap.security.AuthoritiesConstants;
@@ -39,6 +41,11 @@ class PublicUserResourceIT {
     private User user;
 
     @BeforeEach
+    public void setupCsrf() {
+        webTestClient = webTestClient.mutateWith(csrf());
+    }
+
+    @BeforeEach
     public void initTest() {
         user = UserResourceIT.initTestUser(userRepository, em);
     }
@@ -46,7 +53,7 @@ class PublicUserResourceIT {
     @Test
     void getAllPublicUsers() {
         // Initialize the database
-        userRepository.save(user).block();
+        userRepository.create(user).block();
 
         // Get all the users
         UserDTO foundUser = webTestClient
@@ -83,34 +90,5 @@ class PublicUserResourceIT {
             .hasJsonPath()
             .jsonPath("$[?(@=='" + AuthoritiesConstants.USER + "')]")
             .hasJsonPath();
-    }
-
-    @Test
-    void getAllUsersSortedByParameters() throws Exception {
-        // Initialize the database
-        userRepository.save(user).block();
-
-        webTestClient
-            .get()
-            .uri("/api/users?sort=resetKey,DESC")
-            .accept(MediaType.APPLICATION_JSON)
-            .exchange()
-            .expectStatus()
-            .isBadRequest();
-        webTestClient
-            .get()
-            .uri("/api/users?sort=password,DESC")
-            .accept(MediaType.APPLICATION_JSON)
-            .exchange()
-            .expectStatus()
-            .isBadRequest();
-        webTestClient
-            .get()
-            .uri("/api/users?sort=resetKey,id,DESC")
-            .accept(MediaType.APPLICATION_JSON)
-            .exchange()
-            .expectStatus()
-            .isBadRequest();
-        webTestClient.get().uri("/api/users?sort=id,DESC").accept(MediaType.APPLICATION_JSON).exchange().expectStatus().isOk();
     }
 }

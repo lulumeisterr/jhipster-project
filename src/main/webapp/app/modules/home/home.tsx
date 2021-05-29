@@ -6,9 +6,19 @@ import { Translate } from 'react-jhipster';
 import { connect } from 'react-redux';
 import { Row, Col, Alert } from 'reactstrap';
 
+import { getLoginUrl, REDIRECT_URL } from 'app/shared/util/url-utils';
+
 export type IHomeProp = StateProps;
 
 export const Home = (props: IHomeProp) => {
+  useEffect(() => {
+    const redirectURL = localStorage.getItem(REDIRECT_URL);
+    if (redirectURL) {
+      localStorage.removeItem(REDIRECT_URL);
+      location.href = `${location.origin}${redirectURL}`;
+    }
+  });
+
   const { account } = props;
 
   return (
@@ -36,21 +46,14 @@ export const Home = (props: IHomeProp) => {
             <Alert color="warning">
               <Translate contentKey="global.messages.info.authenticated.prefix">If you want to </Translate>
 
-              <Link to="/login" className="alert-link">
-                <Translate contentKey="global.messages.info.authenticated.link"> sign in</Translate>
-              </Link>
+              <a href={getLoginUrl()} className="alert-link">
+                <Translate contentKey="global.messages.info.authenticated.link">sign in</Translate>
+              </a>
               <Translate contentKey="global.messages.info.authenticated.suffix">
                 , you can try the default accounts:
                 <br />- Administrator (login=&quot;admin&quot; and password=&quot;admin&quot;)
                 <br />- User (login=&quot;user&quot; and password=&quot;user&quot;).
               </Translate>
-            </Alert>
-
-            <Alert color="warning">
-              <Translate contentKey="global.messages.info.register.noaccount">You do not have an account yet?</Translate>&nbsp;
-              <Link to="/account/register" className="alert-link">
-                <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
-              </Link>
             </Alert>
           </div>
         )}

@@ -117,40 +117,6 @@ public class ExceptionTranslator implements ProblemHandling, SecurityAdviceTrait
     }
 
     @ExceptionHandler
-    public Mono<ResponseEntity<Problem>> handleEmailAlreadyUsedException(
-        br.com.fiap.service.EmailAlreadyUsedException ex,
-        ServerWebExchange request
-    ) {
-        EmailAlreadyUsedException problem = new EmailAlreadyUsedException();
-        return create(
-            problem,
-            request,
-            HeaderUtil.createFailureAlert(applicationName, true, problem.getEntityName(), problem.getErrorKey(), problem.getMessage())
-        );
-    }
-
-    @ExceptionHandler
-    public Mono<ResponseEntity<Problem>> handleUsernameAlreadyUsedException(
-        br.com.fiap.service.UsernameAlreadyUsedException ex,
-        ServerWebExchange request
-    ) {
-        LoginAlreadyUsedException problem = new LoginAlreadyUsedException();
-        return create(
-            problem,
-            request,
-            HeaderUtil.createFailureAlert(applicationName, true, problem.getEntityName(), problem.getErrorKey(), problem.getMessage())
-        );
-    }
-
-    @ExceptionHandler
-    public Mono<ResponseEntity<Problem>> handleInvalidPasswordException(
-        br.com.fiap.service.InvalidPasswordException ex,
-        ServerWebExchange request
-    ) {
-        return create(new InvalidPasswordException(), request);
-    }
-
-    @ExceptionHandler
     public Mono<ResponseEntity<Problem>> handleBadRequestAlertException(BadRequestAlertException ex, ServerWebExchange request) {
         return create(
             ex,
