@@ -15,7 +15,7 @@
     
  > <p> Backend <br>
     - Spring WebFlux
-    - Spring Security (JWT)
+    - Spring Security (JWT/KeyClock)
    </p>
   
  > <p>Front-end/tests<br>
