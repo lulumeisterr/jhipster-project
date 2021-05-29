@@ -40,6 +40,8 @@
     "nativeLanguage": "pt-br",
     "packageFolder": "br/com/fiap",
     "clientPackageManager": "npm",
-    "languages": ["pt-br"]
+    "languages": ["pt-br"],
+    "entities": ["Sensor", "SubscriptionSensor"],
+    "lastLiquibaseTimestamp": 1622267466000
   }
 }
