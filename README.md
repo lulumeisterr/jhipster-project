@@ -56,7 +56,15 @@
  > 2 - Configure o seu banco de dados utilizando as propriedades da aplicação <br>
  > 3 - Inicialize o KeyClock (Defina o profile de dev na hora de inicializar o maven caso for rodar local)
          
-        docker-compose -f /src/main/docker/keyclock.yml up -d
+        docker-compose -f src/main/docker/app.yml up (Para subir toda a aplicação)
+        
+        Subindo apenas o Keyclock
+        
+        docker-compose -f /src/main/docker/keyclock.yml up -d 
+        
+        Subindo apenas o backend
+        
+        ./mvnw -DskipTests -Dspring.profiles.active={prod} <- Aqui voce deve especificar seu o ambiente que deseja usar (prod,dev)
          
  
  # O'que foi configurado na ec2 ?
